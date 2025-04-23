@@ -1,0 +1,175 @@
+{
+  "Comprobante": {
+	"Version": "4.0",
+	"Serie": "A",
+	"Folio": "12345",
+	"Fecha": "2025-04-21T10:30:00",
+	"Sello": "[Sello Digital]",
+	"NoCertificado": "12345678901234567890",
+	"Certificado": "[Certificado Digital]",
+	"SubTotal": 15000.00,
+	"Moneda": "MXN",
+	"Total": 15900.00,
+	"TipoDeComprobante": "I",
+	"MetodoPago": "PUE",
+	"FormaPago": "03",
+	"CondicionesDePago": "Contado",
+	"LugarExpedicion": "06000",
+	"Emisor": {
+	  "Rfc": "XAXX010101000",
+	  "Nombre": "Notaría Pública 123",
+	  "RegimenFiscal": "612"
+	},
+	"Receptor": {
+	  "Rfc": "FIMA950102K23",
+	  "Nombre": "Juan Pérez López",
+	  "DomicilioFiscalReceptor": "06000",
+	  "RegimenFiscalReceptor": "605",
+	  "UsoCFDI": "G03"
+	},
+	"Conceptos": [
+	  {
+		"ClaveProdServ": "84111506",
+		"NoIdentificacion": "NOT123",
+		"Cantidad": 1,
+		"ClaveUnidad": "ACT",
+		"Unidad": "Actividad",
+		"Descripcion": "Servicios notariales para compraventa de inmueble",
+		"ValorUnitario": 10000.00,
+		"Importe": 10000.00,
+		"ObjetoImp": "02",
+		"Impuestos": {
+		  "Traslados": [
+			{
+			  "Base": 10000.00,
+			  "Impuesto": "002",
+			  "TipoFactor": "Tasa",
+			  "TasaOCuota": 0.16,
+			  "Importe": 1600.00
+			}
+		  ],
+		  "Retenciones": [
+			{
+			  "Base": 10000.00,
+			  "Impuesto": "001",
+			  "TipoFactor": "Tasa",
+			  "TasaOCuota": 0.10,
+			  "Importe": 1000.00
+			}
+		  ]
+		}
+	  },
+	  {
+		"ClaveProdServ": "84111506",
+		"NoIdentificacion": "ISAI001",
+		"Cantidad": 1,
+		"ClaveUnidad": "ACT",
+		"Unidad": "Actividad",
+		"Descripcion": "Pago de ISAI a cuenta de terceros",
+		"ValorUnitario": 5000.00,
+		"Importe": 5000.00,
+		"ObjetoImp": "01",
+		"ACuentaTerceros": {
+		  "RfcACuentaTerceros": "GOB900101XYZ",
+		  "NombreACuentaTerceros": "Gobierno del Estado",
+		  "RegimenFiscalACuentaTerceros": "603",
+		  "DomicilioFiscalACuentaTerceros": "06000"
+		}
+	  }
+	],
+	"Impuestos": {
+	  "TotalImpuestosTrasladados": 1600.00,
+	  "TotalImpuestosRetenidos": 1000.00,
+	  "Traslados": [
+		{
+		  "Base": 10000.00,
+		  "Impuesto": "002",
+		  "TipoFactor": "Tasa",
+		  "TasaOCuota": 0.16,
+		  "Importe": 1600.00
+		}
+	  ],
+	  "Retenciones": [
+		{
+		  "Impuesto": "001",
+		  "Importe": 1000.00
+		}
+	  ]
+	},
+	"Complemento": [
+	  {
+		"NotariosPublicos": {
+		  "Version": "1.0",
+		  "DescInmueble": {
+			"TipoInmueble": "01",
+			"Calle": "Avenida Siempre Viva",
+			"NoExterior": "123",
+			"Colonia": "Centro",
+			"Localidad": "Ciudad de México",
+			"Referencia": "Frente al parque",
+			"Municipio": "Cuauhtémoc",
+			"Estado": "CDMX",
+			"Pais": "MEX",
+			"CodigoPostal": "06000"
+		  },
+		  "DatosOperacion": {
+			"NumInstrumentoNotarial": "45678",
+			"FechaInstNotarial": "2025-04-21",
+			"MontoOperacion": 500000.00,
+			"Subtotal": 10000.00,
+			"IVA": 1600.00
+		  },
+		  "DatosNotario": {
+			"CURP": "XAXX010101HDFXXX00",
+			"NumNotaria": "123",
+			"EntidadFederativa": "CDMX"
+		  },
+		  "DatosEnajenante": {
+			"PersonaFisica": {
+			  "Nombre": "María García Sánchez",
+			  "RFC": "GASM700101ABC",
+			  "CURP": "GASM700101MDFRNC09"
+			}
+		  },
+		  "DatosAdquiriente": {
+			"PersonaFisica": {
+			  "Nombre": "Juan Pérez López",
+			  "RFC": "FIMA950102K23",
+			  "CURP": "FIMA950102HDFLRN08"
+			}
+		  }
+		}
+	  },
+	  {
+		"ImpuestosLocales": {
+		  "version": "1.0",
+		  "TotaldeTraslados": 5000.00,
+		  "TotaldeRetenciones": 0.00,
+		  "TrasladosLocales": [
+			{
+			  "ImpLocTrasladado": "ISAI",
+			  "TasadeTraslado": 0.03,
+			  "Importe": 5000.00
+			}
+		  ]
+		}
+	  }
+	],
+	"Addenda": {
+	  "GastosAdicionales": [
+		{
+		  "Concepto": "Impuesto Sobre Adquisición de Inmuebles (ISAI)",
+		  "Monto": 5000.00,
+		  "Beneficiario": "Gobierno del Estado",
+		  "RFCBeneficiario": "GOB900101XYZ"
+		},
+		{
+		  "Concepto": "Certificado de Libertad de Gravamen",
+		  "Monto": 1500.00,
+		  "Beneficiario": "Registro Público de la Propiedad",
+		  "RFCBeneficiario": "RPP900101XYZ"
+		}
+	  ]
+	}
+  }
+}

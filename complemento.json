@@ -1,0 +1,197 @@
+{
+  "Comprobante": {
+	"Version": "4.0",
+	"Serie": "P",
+	"Folio": "123",
+	"Fecha": "2025-04-21T11:00:00",
+	"Sello": "[Sello Digital]",
+	"NoCertificado": "12345678901234567890",
+	"Certificado": "[Certificado Digital]",
+	"SubTotal": 10000.00,
+	"Moneda": "MXN",
+	"Total": 9600.00,
+	"TipoDeComprobante": "P",
+	"MetodoPago": "PPD",
+	"FormaPago": "03",
+	"CondicionesDePago": "Contado",
+	"LugarExpedicion": "06000",
+	"Emisor": {
+	  "Rfc": "XAXX010101000",
+	  "Nombre": "Notaría Pública 123",
+	  "RegimenFiscal": "612"
+	},
+	"Receptor": {
+	  "Rfc": "FIMA950102K23",
+	  "Nombre": "Juan Pérez López",
+	  "DomicilioFiscalReceptor": "06000",
+	  "RegimenFiscalReceptor": "605",
+	  "UsoCFDI": "CP01"
+	},
+	"Impuestos": {
+	  "TotalImpuestosTrasladados": 800.00,
+	  "TotalImpuestosRetenidos": 500.00,
+	  "Traslados": [
+		{
+		  "Impuesto": "002",
+		  "TipoFactor": "Tasa",
+		  "TasaOCuota": 0.16,
+		  "Importe": 800.00
+		}
+	  ],
+	  "Retenciones": [
+		{
+		  "Impuesto": "001",
+		  "Importe": 500.00
+		}
+	  ]
+	},
+	"Complemento": [
+	  {
+		"Pagos": {
+		  "Version": "2.0",
+		  "Totales": {
+			"TotalTrasladosBaseIVA16": 5000.00,
+			"TotalTrasladosImpuestoIVA16": 800.00,
+			"TotalRetencionesISR": 500.00,
+			"MontoTotalPagos": 10000.00
+		  },
+		  "Pago": [
+			{
+			  "FechaPago": "2025-04-21T10:45:00",
+			  "FormaDePagoP": "03",
+			  "MonedaP": "MXN",
+			  "Monto": 10000.00,
+			  "DoctoRelacionado": [
+				{
+				  "IdDocumento": "550e8400-e29b-41d4-a716-446655440000",
+				  "Serie": "A",
+				  "Folio": "12345",
+				  "MonedaDR": "MXN",
+				  "MetodoDePagoDR": "PPD",
+				  "NumParcialidad": 1,
+				  "ImpSaldoAnt": 17400.00,
+				  "ImpPagado": 10000.00,
+				  "ImpSaldoInsoluto": 7400.00,
+				  "ObjetoImpDR": "02",
+				  "ImpuestosDR": {
+					"TrasladosDR": [
+					  {
+						"BaseDR": 5000.00,
+						"ImpuestoDR": "002",
+						"TipoFactorDR": "Tasa",
+						"TasaOCuotaDR": 0.16,
+						"ImporteDR": 800.00
+					  }
+					],
+					"RetencionesDR": [
+					  {
+						"BaseDR": 5000.00,
+						"ImpuestoDR": "001",
+						"TipoFactorDR": "Tasa",
+						"TasaOCuotaDR": 0.10,
+						"ImporteDR": 500.00
+					  }
+					]
+				  }
+				}
+			  ],
+			  "ImpuestosP": {
+				"TrasladosP": [
+				  {
+					"BaseP": 5000.00,
+					"ImpuestoP": "002",
+					"TipoFactorP": "Tasa",
+					"TasaOCuotaP": 0.16,
+					"ImporteP": 800.00
+				  }
+				],
+				"RetencionesP": [
+				  {
+					"BaseP": 5000.00,
+					"ImpuestoP": "001",
+					"TipoFactorP": "Tasa",
+					"TasaOCuotaP": 0.10,
+					"ImporteP": 500.00
+				  }
+				]
+			  }
+			}
+		  ]
+		}
+	  },
+	  {
+		"NotariosPublicos": {
+		  "Version": "1.0",
+		  "DescInmueble": {
+			"TipoInmueble": "01",
+			"Calle": "Avenida Siempre Viva",
+			"NoExterior": "123",
+			"Colonia": "Centro",
+			"Localidad": "Ciudad de México",
+			"Referencia": "Frente al parque",
+			"Municipio": "Cuauhtémoc",
+			"Estado": "CDMX",
+			"Pais": "MEX",
+			"CodigoPostal": "06000"
+		  },
+		  "DatosOperacion": {
+			"NumInstrumentoNotarial": "45678",
+			"FechaInstNotarial": "2025-04-21",
+			"MontoOperacion": 500000.00,
+			"Subtotal": 10000.00,
+			"IVA": 1600.00
+		  },
+		  "DatosNotario": {
+			"CURP": "XAXX010101HDFXXX00",
+			"NumNotaria": "123",
+			"EntidadFederativa": "CDMX"
+		  },
+		  "DatosEnajenante": {
+			"PersonaFisica": {
+			  "Nombre": "María García Sánchez",
+			  "RFC": "GASM700101ABC",
+			  "CURP": "GASM700101MDFRNC09"
+			}
+		  },
+		  "DatosAdquiriente": {
+			"PersonaFisica": {
+			  "Nombre": "Juan Pérez López",
+			  "RFC": "FIMA950102K23",
+			  "CURP": "FIMA950102HDFLRN08"
+			}
+		  }
+		}
+	  },
+	  {
+		"ImpuestosLocales": {
+		  "version": "1.0",
+		  "TotaldeTraslados": 5000.00,
+		  "TotaldeRetenciones": 0.00,
+		  "TrasladosLocales": [
+			{
+			  "ImpLocTrasladado": "ISAI",
+			  "TasadeTraslado": 0.03,
+			  "Importe": 5000.00
+			}
+		  ]
+		}
+	  }
+	],
+	"Addenda": {
+	  "GastosAdicionales": [
+		{
+		  "Concepto": "Impuesto Sobre Adquisición de Inmuebles (ISAI)",
+		  "Monto": 5000.00,
+		  "Beneficiario": "Gobierno del Estado",
+		  "RFCBeneficiario": "GOB900101XYZ"
+		},
+		{
+		  "Concepto": "Certificado de Libertad de Gravamen",
+		  "Monto": 1500.00,
+		  "Beneficiario": "Registro Público de la Propiedad",
+		  "RFCBeneficiario": "RPP900101XYZ"
+		}
+	  ]
+	}
+  }
+}
